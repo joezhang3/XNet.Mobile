@@ -1,1 +1,16 @@
-﻿<Properties StartupItem="iOS/XNet.Mobile.iOS.csproj" />
+﻿<Properties StartupItem="iOS/XNet.Mobile.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XNet.Mobile/HomePage.xaml.cs">
+    <Files>
+      <File FileName="XNet.Mobile/XNet.Mobile.cs" Line="1" Column="1" />
+      <File FileName="XNet.Mobile/HomePage.xaml" Line="2" Column="2" />
+      <File FileName="XNet.Mobile/HomePage.xaml.cs" Line="3" Column="3" />
+      <File FileName="XNet.DataProvider/ActivityProvider.cs" Line="28" Column="28" />
+      <File FileName="XNet.DataProvider/Entity/Activity.cs" Line="28" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNet.Mobile.iOS", "iOS\XNet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNet.Mobile.Droid", "Droid\XNet.Mobile.Droid.csproj", "{B4895FD5-B13E-412F-A1D2-77BA25838200}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XNet.DataProvider", "XNet.DataProvider\XNet.DataProvider.csproj", "{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,22 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|iPhone.Build.0 = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{1D4CF92C-FBE7-4454-B65F-181CBC30CE2A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{69E877A6-B282-4E04-A962-D0C30F63034E}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{69E877A6-B282-4E04-A962-D0C30F63034E}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{69E877A6-B282-4E04-A962-D0C30F63034E}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
