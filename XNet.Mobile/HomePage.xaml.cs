@@ -32,6 +32,10 @@ namespace XNet.Mobile
 		{
 			SearchActivity (string.Empty);
 		}
+
+		void btnLogin_Click(object sender, EventArgs e){
+			App.ShowLogin (this);
+		}
 	}
 }
 

@@ -18,12 +18,15 @@ namespace XNet.Mobile
 			mainPage.Children.Add (new ActivityList (){Title = "Reservation"});
 			mainPage.Children.Add (new ActivityList (){Title = "Membership"});
 			mainPage.Children.Add (new ActivityList (){Title = "My Cart"});
-
 			MainPage = mainPage;
 		}
 		 
 		public void NavigateTo(int whichTab){
 			mainPage.SelectedItem = whichTab;
+		}
+
+		public static void ShowLogin(ContentPage page){
+			page.Navigation.PushAsync (new Login ());
 		}
 
 		protected override void OnStart ()
