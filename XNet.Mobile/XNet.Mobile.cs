@@ -6,10 +6,24 @@ namespace XNet.Mobile
 {
 	public class App : Application
 	{
+		private TabbedPage mainPage;
+
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new HomePage ();
+			mainPage = new TabbedPage ();
+
+			mainPage.Children.Add (new NavigationPage(new HomePage ()){Title = "Home"});
+			mainPage.Children.Add (new NavigationPage(new ActivityList ()){Title = "Activity"});
+			mainPage.Children.Add (new ActivityList (){Title = "Reservation"});
+			mainPage.Children.Add (new ActivityList (){Title = "Membership"});
+			mainPage.Children.Add (new ActivityList (){Title = "My Cart"});
+
+			MainPage = mainPage;
+		}
+		 
+		public void NavigateTo(int whichTab){
+			mainPage.SelectedItem = whichTab;
 		}
 
 		protected override void OnStart ()

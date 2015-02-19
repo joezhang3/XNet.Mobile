@@ -2,21 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 	x:Class="XNet.Mobile.HomePage"
-	Title="Home Mage" Padding = "20">
+	Padding = "0, 20, 0, 0" BackgroundColor="Gray">
+		<Grid Padding="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="30"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition> 	
+			</Grid.RowDefinitions>
 
-		<ListView x:Name="listView">
-            <ListView.ItemTemplate>
-		      <DataTemplate>
-		        <ViewCell>
-		          <ViewCell.View>
-		            <StackLayout Orientation="Vertical">
-		              	<Label Text="{Binding Name}"/>
-		              	<Label Text="{Binding Location}" Font="Arial"/>
-		            </StackLayout>
-		          </ViewCell.View>
-		        </ViewCell>
-		      </DataTemplate>
-		    </ListView.ItemTemplate>
-  		</ListView>
-	
+			<Grid Grid.Row="0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="20"></ColumnDefinition>
+					<ColumnDefinition Width="*"></ColumnDefinition>
+					<ColumnDefinition Width="20"></ColumnDefinition>
+				</Grid.ColumnDefinitions>
+				<Button Text="..." Grid.Column = "2" Grid.Row="0"></Button>
+			</Grid>
+				
+			<StackLayout Orientation="Vertical" Grid.Row="1" BackgroundColor="White">
+				<SearchBar Placeholder="Activity Keyword to search..." SearchButtonPressed="OnSearchBarButtonPressed"></SearchBar>
+				<Label BackgroundColor="Purple">Welcome you to use this app. With this app, you can search and register into an activity with no other restrictions.</Label>
+				<Button x:Name="btnViewActivity" Text="View Activities" Clicked="btnViewActivity_Clicked"></Button>
+				<StackLayout Orientation="Horizontal" Padding="0, 10, 0, 0">
+					<Label FontSize="10">Not registered yet?</Label>
+					<Button Text="Sign Up"></Button>
+				</StackLayout>
+			</StackLayout>
+		</Grid>
+			
+
+			
+		
 </ContentPage>
